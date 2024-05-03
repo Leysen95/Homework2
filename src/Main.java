@@ -35,10 +35,17 @@ public class Main {
         var weightBoxerOne = 78.2;
         var weightBoxerTwo = 82.7;
         var weightBoxers = weightBoxerOne + weightBoxerTwo;
-        System.out.println("Общая масса двух бойцов" + weightBoxers);
+        System.out.println("Общая масса двух бойцов " + weightBoxers);
         var lightWeight = weightBoxerOne - weightBoxerTwo;
-        System.out.println("Разница между бойцами составит" + lightWeight + "кг");
+        System.out.println("Разница между бойцами составит " + lightWeight + " кг");
         var lightWeightBoxers = weightBoxerTwo % weightBoxerOne;
         System.out.println(lightWeightBoxers);
+        var workHours = 640;
+        var personHours = 8;
+        var persons = workHours / personHours;
+        System.out.println ("Всего работников в компании - " + persons + " человек");
+    persons = persons + 94;
+    workHours = persons * personHours;
+    System.out.println ("Если в компании работает " + persons + " человек, то всего " + workHours + " часов работы может быть поделено между сотрудниками.");
     }
 }
