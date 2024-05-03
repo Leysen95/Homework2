@@ -36,7 +36,9 @@ public class Main {
         var weightBoxerTwo = 82.7;
         var weightBoxers = weightBoxerOne + weightBoxerTwo;
         System.out.println("Общая масса двух бойцов" + weightBoxers);
-        var lightWeight = weightBoxerTwo - weightBoxerOne;
+        var lightWeight = weightBoxerOne - weightBoxerTwo;
         System.out.println("Разница между бойцами составит" + lightWeight + "кг");
+        var lightWeightBoxers = weightBoxerTwo % weightBoxerOne;
+        System.out.println(lightWeightBoxers);
     }
 }
